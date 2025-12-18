@@ -29,11 +29,16 @@ func NewRoom(id string) *Room {
 
 func generateItems() []Item {
 	return []Item{
-		{Name: "Vintage Toaster", ImageURL: "https://placehold.co/400x300?text=Toaster", Price: 45.0},
-		{Name: "Gaming Chair", ImageURL: "https://placehold.co/400x300?text=Chair", Price: 199.99},
-		{Name: "Electric Scooter", ImageURL: "https://placehold.co/400x300?text=Scooter", Price: 450.0},
-		{Name: "Smart Watch", ImageURL: "https://placehold.co/400x300?text=Watch", Price: 250.0},
-		{Name: "Blender", ImageURL: "https://placehold.co/400x300?text=Blender", Price: 89.99},
+        return []Item{
+                {Name: "Dell Latitude 5420 Business Laptop, 14-Inch FHD(1920x1080) Display, Intel Core i7-1165G7, 32GB RAM, 512 GB SSD, QWERTY Keyboard, Windows 11 Pro", ImageURL: "https://m.media-amazon.com/images/I/61AWVWW92nL._AC_SL1500_.jpg", Price: 399.0},
+                {Name: "Visual Studio Enterprise Standard (per user per year)", ImageURL: "https://logos-world.net/wp-content/uploads/2025/04/Visual-Studio-Logo.png", Price: 1919.95},
+                {Name: "SQL Server Management Studio", ImageURL: "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/logo.png", Price: 0.0},
+                {Name: "Lucid Chart (per user per month)", ImageURL: "https://logovtor.com/wp-content/uploads/2021/09/lucidchart-logo-vector.png", Price: 10.0},
+                {Name: "Postman Professional (per user per month)", ImageURL: "https://blog.postman.com/wp-content/uploads/2015/08/postman-logo-drawing-board-825x510.png", Price: 21.67},
+                {Name: "Dell Pro Thunderbolt 4 Dock - WD25TB4 (with VAT)", ImageURL: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/docks/wd25tb4/media-gallery/dock-station-wd25tb4-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=3653&hei=1444&qlt=100,1&resMode=sharp2&size=3653,1444&chrss=full&imwidth=5000", Price: 268.92},
+                {Name: "Dell Pro 24 Adjustable Stand Monitor - E2425HSM", ImageURL: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/e-series/e2425hsm/media-gallery/monitor-dell-pro-e2425hsm-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4513&hei=4178&qlt=100,1&resMode=sharp2&size=4513,4178&chrss=full&imwidth=5000", Price: 97.20},
+                {Name: "Markus Office Chair with Armrests", ImageURL: "https://www.ikea.com/gb/en/images/products/markus-office-chair-vissle-dark-grey__0724714_pe734597_s5.jpg?f=xl", Price: 150.0},
+        }
 	}
 }
 

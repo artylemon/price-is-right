@@ -31,7 +31,7 @@ const Leaderboard = ({ gameState, currentPlayerName, onReset }) => {
                     {!isGameOver && (
                         <div className="text-center mb-4">
                             <h4>Item: {currentItem.name}</h4>
-                            <h2 className="text-success">Actual Price: ${currentItem.price.toFixed(2)}</h2>
+                            <h2 className="text-success">Actual Price: £{currentItem.price.toFixed(2)}</h2>
                             <p>Next round in: {gameState.timeLeft}s</p>
                         </div>
                     )}
@@ -53,8 +53,8 @@ const Leaderboard = ({ gameState, currentPlayerName, onReset }) => {
                                     <tr key={p.name} className={p.name === currentPlayerName ? "table-primary" : ""}>
                                         <td>{index + 1}</td>
                                         <td>{p.name} {p.name === currentPlayerName && '(You)'}</td>
-                                        {!isGameOver && <td>${p.currentGuess.toFixed(2)}</td>}
-                                        {!isGameOver && <td>${diff}</td>}
+                                        {!isGameOver && <td>£{p.currentGuess.toFixed(2)}</td>}
+                                        {!isGameOver && <td>£{diff}</td>}
                                         {isGameOver && <td>{p.score}</td>}
                                     </tr>
                                 );
