@@ -1,0 +1,26 @@
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Go
+server/price-is-right-server
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*test.out
+*test.test
+
+# Build
+dist/
+build/

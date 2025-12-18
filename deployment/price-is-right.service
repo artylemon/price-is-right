@@ -1,0 +1,15 @@
+[Unit]
+Description=Price is Right Game Server
+After=network.target
+
+[Service]
+# Change this to your user if not running as root/www-data
+User=root
+# Path to where you put the server binary
+WorkingDirectory=/opt/price-is-right
+ExecStart=/opt/price-is-right/server
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
